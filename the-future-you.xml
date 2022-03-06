@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+  <info>
+    <name>The Future You</name>
+    <description>The Future You Patron from Alex's Homebrew</description>
+    <author>Alex Regalado</author>
+    <update version="0.0.5">
+      <file name="the-future-you.xml" url="https://raw.githubusercontent.com/berglt84/custombuilds/the-future-you.xml" />
+    </update>
+  </info>
+  <element name="The Future You" type="Archetype" source="Alex's Homebrew" id="ID_ALEX_ARCHETYPE_FUTUREYOU">
+    <supports>Otherworldly Patron</supports>
+    <description>
+      <p>Your patron is a future version of yourself. At some point in your life, you began to realize that a future veresion of yourself had discovered a way to communicate with you. You will spontaneously receive feelings, thoughts, and sensations belonging to someone who calls themselves "The Future You." Power from the Future You comes from the fact that they possess knowledge of the future. You are capable of casting spells because they tell you how to do so in the moment. You also receive insight on the actions of those around you because the Future You chooses to tell you. Communication with the Future You is unilateral and others are unaware of the relationship. However, you may choose to tell others. While communication from the Future You is not consistent or predictable, they allow you to make decisions differently, because it's entirely possible you have already experienced the outcome of your actions and of those around you.</p>
+      <div element="ID_ALEX_ARCHETYPE_FUTUREYOU_EXPANDED_SPELL_LIST" />
+      <div element="ID_ALEX_ARCHETYPE_FUTUREYOU_FUTURE_GUIDANCE" />
+      <div element="ID_ALEX_ARCHETYPE_FUTUREYOU_PACT_OF_THE_HOURGLASS" />
+      <div element="ID_ALEX_ARCHETYPE_FUTUREYOU_DEJA_VU" />
+      <div element="ID_ALEX_ARCHETYPE_FUTUREYOU_SPOILER_ALERT" />
+      <div element="ID_ALEX_ARCHETYPE_FUTUREYOU_FUTURE_FORESIGHT" />
+    </description>
+    <sheet>
+      <description>Your patron is a future version of yourself, empowering you with knowledge.</description>
+    </sheet>
+    <rules>
+      <grant type="Archetype Feature" id="ID_ALEX_ARCHETYPE_FUTUREYOU_EXPANDED_SPELL_LIST" level="1"/>
+      <grant type="Archetype Feature" id="ID_ALEX_ARCHETYPE_FUTUREYOU_FUTURE_GUIDANCE" level="1"/>
+      <grant type="Pact Boon" id="ID_ALEX_ARCHETYPE_FUTUREYOU_PACT_OF_THE_HOURGLASS" level="3"/>
+      <grant type="Archetype Feature" id="ID_ALEX_ARCHETYPE_FUTUREYOU_DEJA_VU" level="6"/>
+      <grant type="Archetype Feature" id="ID_ALEX_ARCHETYPE_FUTUREYOU_SPOILER_ALERT" level="10"/>
+      <grant type="Archetype Feature" id="ID_ALEX_ARCHETYPE_FUTUREYOU_FUTURE_FORESIGHT" level="14"/>
+    </rules>
+  </element>
+  <element name="Expanded Spell List" type="Archetype Feature" source="Alex's Homebrew" id="ID_ALEX_ARCHETYPE_FUTUREYOU_EXPANDED_SPELL_LIST">
+    <supports>Warlock</supports>
+    <description>
+      <p>The Future You lets you choose from an expanded list of spells when you learn a warlock spell. The following spells are added to the warlock spell list for you.</p>
+      <h5>FUTURE YOU EXPANDED SPELLS</h5>
+      <table>
+        <thead>
+          <tr><td>Spell Level</td><td>Spells</td></tr>
+        </thead>
+        <tr><td>1st</td><td><em>alarm, bless</em></td></tr>
+        <tr><td>2nd</td><td><em>augury, find traps</em></td></tr>
+        <tr><td>3rd</td><td><em>beacon of hope, protection from energy</em></td></tr>
+        <tr><td>4th</td><td><em>divination, freedom of movement</em></td></tr>
+        <tr><td>5th</td><td><em>legend lord, commune</em></td></tr>
+      </table>
+    </description>
+    <sheet display="false">
+      <description>The Future You lets you choose from an expanded list of spells when you learn a warlock spell.</description>
+    </sheet>
+    <spellcasting name="Warlock" extend="true">
+      <extend>ID_PHB_SPELL_ALARM</extend>
+      <extend>ID_PHB_SPELL_BLESS</extend>
+      <extend>ID_PHB_SPELL_AUGURY</extend>
+      <extend>ID_PHB_SPELL_FIND_TRAPS</extend>
+      <extend>ID_PHB_SPELL_BEACON_OF_HOPE</extend>
+      <extend>ID_PHB_SPELL_PROTECTION_FROM_ENERGY</extend>
+      <extend>ID_PHB_SPELL_DIVINATION</extend>
+      <extend>ID_PHB_SPELL_FREEDOM_OF_MOVEMENT</extend>
+      <extend>ID_PHB_SPELL_LEGEND_LORD</extend>
+      <extend>ID_PHB_SPELL_COMMUNE</extend>
+    </spellcasting>
+  </element>
+  <element name="Future Guidance" type="Archetype Feature" source="Alex's Homebrew" id="ID_ALEX_ARCHETYPE_FUTUREYOU_FUTURE_GUIDANCE">
+    <description>
+      <p>Starting at 1st level, you gain spontaneous insight into the actions of those around you. As an action, you may encourage one willing creature that can hear you. The creature may roll a d4 and add the number rolled to one ability check of its choice. It can roll the die before or after making the ability check.</p>
+    </description>
+    <sheet>
+      <description>As an action, you may encourage one willing creature that can hear you. The creature may roll a d4 and add the number rolled to one ability check of its choice. It can roll the die before or after making the ability check.</description>
+    </sheet>
+  </element>
+  <element name="Pact of the Hourglass" type="Pact Boon" source="Alex's Homebrew" id="ID_ALEX_ARCHETYPE_FUTUREYOU_PACT_OF_THE_HOURGLASS">
+    <description>
+      <p>Starting at 3rd level, your patron gives you a pact in the form of a tattoo in the shape of an hourglass. This hourglass, however, is real and can be activated through a method of your choosing.</p>
+      <p class="indent">Activating the hourglass allows you to perfectly recall this exact moment in time. When you choose to recall this moment, you automatically succeed on a Wisdom (Perception or Insight) check or any Intellegience check. Once you use this ability, you can't use it again until you finish a short or long rest.</p>
+      <p class="indent">When the outcome of your ability is completed, the sand in the hourglass drains from one side to the other. A short rest resets the hourglass to be used again.</p>
+    </description>
+    <sheet>
+      <description>Activating the hourglass tattoo allows you to perfectly recall this exact moment in time. When you choose to recall this moment, you automatically succeed on a Wisdom (Perception or Insight) check or any Intellegience check. Once you use this ability, you can't use it again until you finish a short or long rest. When the outcome of your ability is completed, the sand in the hourglass drains from one side to the other. A short rest resets the hourglass to be used again.</description>
+    </sheet>
+  </element>
+  <element name="Deja Vu" type="Archetype Feature" source="Alex's Homebrew" id="ID_ALEX_ARCHETYPE_FUTUREYOU_DEJA_VU">
+    <description>
+      <p>At 6th level, you learn to interpret spontaneous sensations of deja vu. When a creature makes an attack roll against you, you can use your reaction to impose disadvantage on that roll. if the attack misses you, your next attack roll against the creature has advantage if you make it before the end of your next turn. Once you use this feature, you cannot use it again until you finish a short or long rest. </p>
+    </description>
+    <sheet>
+      <description>When a creature makes an attack roll against you, you can use your reaction to impose disadvantage on that roll. if the attack misses you, your next attack roll against the creature has advantage if you make it before the end of your next turn. Once you use this feature, you cannot use it again until you finish a short or long rest.</description>
+    </sheet>
+  </element>
+  <element name="Spoiler Alert" type="Archetype Feature" source="Alex's Homebrew" id="ID_ALEX_ARCHETYPE_FUTUREYOU_SPOILER_ALERT">
+    <description>
+      <p>Starting at 10th level, you gain the ability to sense immediate danger. As a reaction, choose one target that can hear you and grant them a +2 bonus to AC. This target has protection from immediate danger until the start of your next turn. Target has protection against triggering attacks and takes no damage from magic missile.</p>
+    </description>
+    <sheet>
+      <description>As a reaction, choose one target that can hear you and grant them a +2 bonus to AC. This target has protection from immediate danger until the start of your next turn. Target has protection against triggering attacks and takes no damage from magic missile.</description>
+    </sheet>
+  </element>
+  <element name="Future Foresight" type="Archetype Feature" source="Alex's Homebrew" id="ID_ALEX_ARCHETYPE_FUTUREYOU_FUTURE_FORESIGHT">
+    <description>
+      <p>Starting at 14th level, you gain the ability to foresee the immediate future of those around you. As a bonus action, one willing creature that can hear you can't be surprised and has advantage on attack rolls, ability checks, and saving throws until the start of your next turn.</p>
+    </description>
+    <sheet>
+      <description> As a bonus action, one willing creature that can hear you can't be surprised and has advantage on attack rolls, ability checks, and saving throws until the start of your next turn.</description>
+    </sheet>
+  </element>
+</elements>
